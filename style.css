@@ -1,3 +1,6 @@
-p {
-  color:  #29c8b5 ;
+p,ol,h1 {
+  color:  #29c8b5 ;  
 }
+a: hover {
+  color: #954848 ;
+  {
