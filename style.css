@@ -3,10 +3,10 @@ p,ol,h1 {
 }
 a:hover {
   color: #954848;
-  width: 800px;
+  width: 20px;
   border: 1px solid  #969423;
 }
 html {
-  font-size: 500px;
+  font-size: 10px;
   font-family: 'Libre Baskerville', serif;
 }
