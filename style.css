@@ -1,20 +1,20 @@
 p,ol {
   color:#29c8b5;
-  font-size: 60px;    
+  font-size: 35px;    
   line-height: 2;
   letter-spacing: 1px;
 }
 a:hover {
   color:#969423;
-  font-size: 16px; 
-  width: 1000px;
+  font-size: 30px; 
+  width: 100px;
   border: 3px solid  #969423;
 }
 html {
-  font-size: 50px;
+  font-size: 25px;
   font-family: 'Libre Baskerville', serif;
 }
 h1 {
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
 }
