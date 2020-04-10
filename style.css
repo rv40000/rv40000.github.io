@@ -1,4 +1,4 @@
-p3 {
+p {
   color:#29c8b5;
   font-size: 15px;    
   line-height: 2;
@@ -19,11 +19,10 @@ h1 {
   font-size: 50px;
   text-align: center;
 }
-p1,p2 {
-   width: 1000px;
+body {
+  width: 600px;
   margin: 0 auto;
-  background-color: #b6faf4;
+  background-color: #b2b6b1;
   padding: 0 20px 20px 20px;
-  border: 1px solid  #b2b6b1
-;
+  border: 2px solid black;
 }
