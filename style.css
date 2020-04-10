@@ -18,11 +18,15 @@ html {
 h1 {
   font-size: 50px;
   text-align: center;
+  margin: 0;
+  padding: 20px 0;    
+  color: #839781;
+  text-shadow: 3px 3px 1px  #646a63 ;
 }
 body {
   width: 1080px;
   margin: 30 auto;
   background-color: #b2b6b1;
   padding: 0 40px 40px 40px;
-  border: 2px solid black;
+  border: 2px solid  #839781;
 }
