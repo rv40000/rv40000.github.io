@@ -1,8 +1,8 @@
 p {
-  color:#29c8b5;
-  font-size: 15px;    
+  color:#6a7469;
+  font-size: 20px;    
   line-height: 2;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 img {  
   display: block;
@@ -14,14 +14,14 @@ img.o4ko {
   
 a:hover {
   color:#969423;
-  font-size: 20px; 
+  font-size: 30px; 
   width: 100px;
   border: 3px solid  #969423;
 }
 html {
-  font-size: 15px;
+  font-size: 20px;
   font-family: 'Libre Baskerville', serif;
-  background-color: #dfdfd9;
+  background-color: #6a7469;
 }
 h1 {
   font-size: 50px;
