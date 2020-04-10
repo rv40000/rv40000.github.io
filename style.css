@@ -6,3 +6,7 @@ a:hover {
   width: 800px;
   border: 1px solid  #969423;
 }
+html {
+  font-size: 500px;
+  font-family: 'Libre Baskerville', serif;
+}
