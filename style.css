@@ -4,10 +4,14 @@ p {
   line-height: 2;
   letter-spacing: 2px;
 }
-img {
+img {  
   display: block;
   margin: 0 auto;
 }
+img.o4ko {
+  margin: 0 auto;
+}
+  
 a:hover {
   color:#969423;
   font-size: 20px; 
