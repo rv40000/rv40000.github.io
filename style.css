@@ -4,6 +4,10 @@ p {
   line-height: 2;
   letter-spacing: 2px;
 }
+img {
+  display: block;
+  margin: 0 auto;
+}
 a:hover {
   color:#969423;
   font-size: 20px; 
@@ -21,7 +25,7 @@ h1 {
   margin: 0;
   padding: 20px 0;    
   color: #839781;
-  text-shadow: 5px 10px 15px  #646a63 ;
+  text-shadow: 5px 5px 3px  #646a63 ;
 }
 body {
   width: 1080px;
