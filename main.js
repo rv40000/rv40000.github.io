@@ -3,7 +3,7 @@ function makeDonkey()
   var myHeading = document.querySelector('h1');
 myHeading.textContent = 'Oselslo';
 }
-function multiply(num1,num2) {
-  var result = num1 * num2;
+function multiply(2,4) {
+  var result = 2 * 4;
   return result;
 }
