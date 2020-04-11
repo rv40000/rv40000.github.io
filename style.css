@@ -4,6 +4,12 @@ p {
   line-height: 2;
   letter-spacing: 1px;
 }
+button {
+  margin 0 avto;
+  color: #0badf3;
+  font-size: 50px;
+  width: 200px;
+}  
 img {  
   display: block;
   margin: 0 auto;
@@ -11,7 +17,6 @@ img {
 img.o4ko {
   margin:unset;
 }
-  
 a:hover {
   color:#969423;
   font-size: 30px; 
