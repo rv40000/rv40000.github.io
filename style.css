@@ -1,19 +1,20 @@
 p {
-  color:#6a7469;
+  color:#2f3131;
   font-size: 20px;    
-  line-height: 2;
+  line-height: 1;
   letter-spacing: 1px;
 }
 button {
   margin 0 avto;
-  color: #0badf3;
-  font-size: 50px;
+  background-color: #dffaf9;
+  color:  #2a1b1 ;
+  font-size: 25px;
   width: 200px;
 }  
 #werty {
   margin 0 avto;
   color: #969423;
-  font-size: 80px;
+  font-size: 20px;
   width: 200px;
 }
 img {  
@@ -24,15 +25,15 @@ img.o4ko {
   margin:unset;
 }
 a:hover {
-  color:#969423;
-  font-size: 30px; 
+  color: black;
+  font-size: 25px; 
   width: 100px;
-  border: 3px solid  #969423;
+  border: 3px solid   #f3381b;
 }
 html {
   font-size: 20px;
   font-family: 'Libre Baskerville', serif;
-  background-color: #6a7469;
+  background-color:  #fefefe;
 }
 h1 {
   font-size: 50px;
@@ -43,9 +44,8 @@ h1 {
   text-shadow: 5px 5px 3px  #646a63 ;
 }
 body {
-  width: 1080px;
+  width: 1280px;
   margin: 30 auto;
-  background-color: #b2b6b1;
+  background-color: #bfe7f8;
   padding: 0 40px 40px 40px;
-  border: 2px solid  #839781;
-}
+  }
