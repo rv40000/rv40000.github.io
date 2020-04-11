@@ -50,3 +50,10 @@ body {
   background-color: #bfe7f8;
   padding: 0 40px 40px 40px;
   }
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0 auto;    
+  color: black;
+}
