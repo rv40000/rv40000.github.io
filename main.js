@@ -4,6 +4,6 @@ function makeDonkey()
 myHeading.textContent = 'Oselslo';
 }
 function multiply(2,4) {
-  var result = 2 * 4;
+  var result = num1 * num2;
   return result;
 }
