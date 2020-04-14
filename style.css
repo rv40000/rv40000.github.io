@@ -4,15 +4,18 @@ p {
   line-height: 1;
   letter-spacing: 1px;
 }
+footer {
+  text-align: left;
+  {
 button {
-  margin 0 avto;
+  margin: 0 avto;
   background-color: #dffaf9;
   color:  #2a1b1 ;
   font-size: 25px;
   width: 200px;
 }  
 #werty {
-  margin 0 avto;
+  margin: 0 avto;
   color: #969423;
   font-size: 20px;
   width: 200px;
