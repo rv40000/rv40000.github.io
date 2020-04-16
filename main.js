@@ -1,18 +1,25 @@
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 function setUserName() {
-  var myName = prompt('Вводи имя');
-  localStorage.setItem('name', myName);
-  myHeading.textContent = 'Ты осёл, ' + myName;
-}
-if(!localStorage.getItem('name')) {
-  setUserName();
+  let userName = prompt("ты кто?", '');
+
+if (userName == 'яетиг')
+
+  let pass = prompt('напиши qwerty?', '');
+
+  if (pass == 'qwerty') {
+    alert( 'Ты осёл' );
+    myHeading('На странице осёл);
+  } else if (pass == '' || pass == null) {
+    alert( 'пиши реще' );
+  } else {
+    alert( 'тупой шоле?' );
+  }
+
+} else if (userName == '' || userName == null) {
+  alert( 'пиши реще' );
 } else {
-  var storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Ты осёл, ' + storedName;
-}
-myButton.onclick = function() {
-  setUserName();
+  alert( "с маленькой, если чо" );
 }
 function makeDonkey()
 {
