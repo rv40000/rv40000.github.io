@@ -21,6 +21,9 @@ if (userName == 'яетиг')
 } else {
   alert( "с маленькой, если чо" );
 }
+myButton.onclick = function() {
+  setUserName();
+}
 function makeDonkey()
 {
   var cartos = document.querySelector('img');
