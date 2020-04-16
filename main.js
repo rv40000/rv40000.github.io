@@ -2,11 +2,8 @@ var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 function setUserName() {
   let userName = prompt("ты кто?", '');
-
-if (userName == 'яетиг')
-
+if (userName == 'яетиг'){
   let pass = prompt('напиши qwerty?', '');
-
   if (pass == 'qwerty') {
     alert( 'Ты осёл' );
     myHeading.textContent = 'На странице осёл';
@@ -15,7 +12,6 @@ if (userName == 'яетиг')
   } else {
     alert( 'тупой шоле?' );
   }
-
 } else if (userName == '' || userName == null) {
   alert( 'пиши реще' );
 } else {
