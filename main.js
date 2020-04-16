@@ -9,7 +9,7 @@ if (userName == 'яетиг')
 
   if (pass == 'qwerty') {
     alert( 'Ты осёл' );
-    myHeading('На странице осёл);
+    myHeading.textContent = 'На странице осёл';
   } else if (pass == '' || pass == null) {
     alert( 'пиши реще' );
   } else {
