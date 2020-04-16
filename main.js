@@ -1,5 +1,5 @@
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
 function setUserName() {
   let userName = prompt("ты кто?", '');
 if (userName == 'яетиг'){
@@ -22,8 +22,8 @@ myButton.onclick = function() {
 }
 function makeDonkey()
 {
-  var cartos = document.querySelector('img');
-  var mySrc = cartos.getAttribute('src');
+  let cartos = document.querySelector('img');
+  let mySrc = cartos.getAttribute('src');
     if(mySrc === '1522765869310.jpg') {
       cartos.setAttribute ('src','shit.jpg');
     } else {
