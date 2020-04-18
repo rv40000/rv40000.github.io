@@ -74,7 +74,7 @@ function getInfo()
     // зовём функцию отправки запроса и говорим ей, какая функция будет
     // обрабатывать результат
     // также, ясен пень, указываем, какой ресурс запрашиваем
-    sendRequest(`http://api.tvmaze.com/search/shows?q=${search}`, function(rez)
+    sendRequest(`https://api.tvmaze.com/search/shows?q=${search}`, function(rez)
     {
         if (rez === null) { console.error("Запрос обломался, пустой результат"); }
         else { console.log(rez); }
