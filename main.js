@@ -15,7 +15,7 @@ if (userName == 'яетиг'){
 } else if (userName == '' || userName == null) {
   alert( 'пиши реще' );
 } else {
-  alert( "с маленькой, если чо" );
+  alert( "порюзке с мелкой" );
 }
 }
 myButton.onclick = function() {
