@@ -3,7 +3,7 @@ var myHeading = document.querySelector('h1');
 function setUserName() {
   var userName = prompt("ты кто?", '');
 if (userName == 'яетиг'){
- var pass = prompt('напиши qwerty?', '');
+ var pass = prompt('напиши qwerty', '');
   if (pass == 'qwerty') {
     alert( 'Ты осёл' );
     myHeading.textContent = 'На странице осёл';
