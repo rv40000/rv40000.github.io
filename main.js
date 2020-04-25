@@ -80,3 +80,54 @@ function getInfo()
         else { console.log(rez); }
     });
 }
+var requestURL = 'https://github.com/rv40000/rv40000.github.io/blob/master/stuli.json'
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+  var stul = request.response;
+  populateHeader(stul);
+  showParts(stul);
+}
+function populateHeader(jsonObj) {
+  var myH3 = document.createElement('h3');
+  myH1.textContent = jsonObj['stul'];
+  header.appendChild(myH3);
+
+  var myPara = document.createElement('p');
+  myPara.textContent = 'position: ' + jsonObj['position'] + ' // Formed: ' + jsonObj['formed'];
+  header.appendChild(myPara);
+}
+function stul(jsonObj) {
+  var parts = jsonObj['parts'];
+      
+  for (var i = 0; i < parts.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH4 = document.createElement('h4');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myList = document.createElement('ul');
+
+    myH4.textContent = parts[i].name;
+    myPara1.textContent = 'number: ' + parts[i].number;
+    myPara2.textContent = 'size: ' + parts[i].age;
+    myPara3.textContent = 'options:';
+        
+    var options = parts[i].options;
+    for (var j = 0; j < options.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = options[j];
+      myList.appendChild(listItem);
+    }
+
+    myArticle.appendChild(myH4);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myList);
+
+    section.appendChild(myArticle);
+  }
+}
