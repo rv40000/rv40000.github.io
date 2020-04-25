@@ -103,7 +103,7 @@ function showParts(jsonObj) {
     myH4.textContent = parts[i].name;
     myPara1.textContent = 'number: ' + parts[i].number;
     myPara2.textContent = 'size: ' + parts[i].size;
-    myPara3.textContent = 'options: ' + parts[i].options;
+    myPara3.textContent = 'options:';
         
     var options = parts[i].options;
     for (var j = 0; j < options.length; j++) {
