@@ -80,7 +80,7 @@ function getInfo()
         else { console.log(rez); }
     });
 }
-var requestURL = ' https://rv40000.github.io/stuli.json';
+var requestURL = 'https://rv40000.github.io/stuli.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -91,7 +91,7 @@ request.onload = function() {
   showParts(stul);
 }
 function populateHeader(jsonObj) {
-  document.getElementById("stuly-result").textContent = jsonObj['stul'];       
+  document.getElementById("stuly-result").textContent = jsonObj.mebelName;       
   for (var i = 0; i < parts.length; i++) {
     var myArticle = document.createElement('article');
     var myH4 = document.createElement('h4');
