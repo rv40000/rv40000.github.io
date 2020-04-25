@@ -92,7 +92,7 @@ request.onload = function() {
 }
 function populateHeader(jsonObj) {
   var myH3 = document.createElement('h3');
-  myH1.textContent = jsonObj['stul'];
+  myH3.textContent = jsonObj['stul'];
   header.appendChild(myH3);
 
   var myPara = document.createElement('p');
