@@ -91,14 +91,7 @@ request.onload = function() {
   showParts(stul);
 }
 function populateHeader(jsonObj) {
-  document.getElementById("stuly-result").textContent = jsonObj['stul'];
-  var myPara = document.createElement('p');
-  myPara.textContent = 'position: ' + jsonObj['position'] + ' // Formed: ' + jsonObj['formed'];
-  header.appendChild(myPara);
-}
-function stul(jsonObj) {
-  var parts = jsonObj['parts'];
-      
+  document.getElementById("stuly-result").textContent = jsonObj['stul'];       
   for (var i = 0; i < parts.length; i++) {
     var myArticle = document.createElement('article');
     var myH4 = document.createElement('h4');
