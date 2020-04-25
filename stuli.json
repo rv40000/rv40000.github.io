@@ -1,0 +1,39 @@
+{
+  "mebelName" : "stul",
+  "madeOf" : "derevo",
+  "formed" : 1900,
+  "position" : "kuhnya",
+  "active" : true,
+  "parts" : [
+    {
+      "name" : "nojka",
+      "size" : 29,
+      "number" : "4",
+      "options" : [
+        "stoyat",
+        "lomatsa",
+        "strike finger"
+      ]
+    },
+    {
+      "name" : "sidenie",
+      "size" : 30x30,
+      "number" : "1",
+      "options" : [
+        "derjat jopu",
+        "derjat nogi",
+        "derjat vsyakoe"
+      ]
+    },
+    {
+      "name" : "spinka",
+      "size" : 30x40,
+      "number" : "1",
+      "options" : [
+        "derjat spinu",
+        "sushit veschi",
+        "lomat sheu",
+              ]
+    }
+  ]
+}
