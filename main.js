@@ -92,7 +92,7 @@ request.onload = function() {
 }
 function populateHeader(jsonObj) {
   document.getElementById("stuly-result").textContent = jsonObj.mebelName;       
-  for (var i = 0; i < parts.length; i++) {
+  for (var i = 0; i < jsonObj.length; i++) {
     var myArticle = document.createElement('article');
     var myH4 = document.createElement('h4');
     var myPara1 = document.createElement('p');
@@ -100,12 +100,12 @@ function populateHeader(jsonObj) {
     var myPara3 = document.createElement('p');
     var myList = document.createElement('ul');
 
-    myH4.textContent = parts[i].name;
-    myPara1.textContent = 'number: ' + parts[i].number;
-    myPara2.textContent = 'size: ' + parts[i].age;
+    myH4.textContent = jsonObj[i].name;
+    myPara1.textContent = 'number: ' + jsonObj[i].number;
+    myPara2.textContent = 'size: ' + jsonObj[i].age;
     myPara3.textContent = 'options:';
         
-    var options = parts[i].options;
+    var options = jsonObj[i].options;
     for (var j = 0; j < options.length; j++) {
       var listItem = document.createElement('li');
       listItem.textContent = options[j];
