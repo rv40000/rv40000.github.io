@@ -90,8 +90,9 @@ request.onload = function() {
   showParts(stul);
 }
 function showParts(jsonObj) {
-  document.getElementById("stuly-result").textContent = jsonObj.mebelName;       
-  for (var i = 0; i < jsonObj.length; i++) {
+  document.getElementById("stuly-result").textContent = jsonObj.mebelName;  
+   var parts = jsonObj['parts'];
+  for (var i = 0; i < parts.length; i++) {
     var myArticle = document.createElement('article');
     var myH4 = document.createElement('h4');
     var myPara1 = document.createElement('p');
@@ -99,10 +100,10 @@ function showParts(jsonObj) {
     var myPara3 = document.createElement('p');
     var myList = document.createElement('ul');
 
-    myH4.textContent = jsonObj[i].name;
-    myPara1.textContent = 'number: ' + jsonObj[i].number;
-    myPara2.textContent = 'size: ' + jsonObj[i].age;
-    myPara3.textContent = 'options:';
+    myH4.textContent = parts[i].name;
+    myPara1.textContent = 'number: ' + parts[i].number;
+    myPara2.textContent = 'size: ' + parts[i].size;
+    myPara3.textContent = 'options: ' + parts[i].options;
         
     var options = jsonObj[i].options;
     for (var j = 0; j < options.length; j++) {
