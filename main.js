@@ -87,10 +87,9 @@ request.responseType = 'json';
 request.send();
 request.onload = function() {
   var stul = request.response;
-  populateHeader(stul);
   showParts(stul);
 }
-function populateHeader(jsonObj) {
+function showParts(jsonObj) {
   document.getElementById("stuly-result").textContent = jsonObj.mebelName;       
   for (var i = 0; i < jsonObj.length; i++) {
     var myArticle = document.createElement('article');
