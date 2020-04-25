@@ -117,7 +117,6 @@ function showParts(jsonObj) {
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
     myArticle.appendChild(myList);
-
-    section.appendChild(myArticle);
+document.getElementById("some-results").appendChild(myArticle);
   }
 }
