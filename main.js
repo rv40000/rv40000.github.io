@@ -117,6 +117,6 @@ function showParts(jsonObj) {
     myArticle.appendChild(myPara2);
     myArticle.appendChild(myPara3);
     myArticle.appendChild(myList);
-document.getElementById("some-results").appendChild(myArticle);
+document.getElementById("tupoiOsel").appendChild(myArticle);
   }
 }
