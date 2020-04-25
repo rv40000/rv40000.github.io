@@ -91,10 +91,7 @@ request.onload = function() {
   showParts(stul);
 }
 function populateHeader(jsonObj) {
-  var myH3 = document.createElement('h3');
-  myH3.textContent = jsonObj['stul'];
-  header.appendChild(myH3);
-
+  document.getElementById("stuly-result").textContent = jsonObj['stul'];
   var myPara = document.createElement('p');
   myPara.textContent = 'position: ' + jsonObj['position'] + ' // Formed: ' + jsonObj['formed'];
   header.appendChild(myPara);
