@@ -7,7 +7,7 @@
   "parts" : [
     {
       "name" : "nojka",
-      "size" : 29,
+      "size" : "29",
       "number" : "4",
       "options" : [
         "stoyat",
@@ -17,7 +17,7 @@
     },
     {
       "name" : "sidenie",
-      "size" : 30x30,
+      "size" : "30x30",
       "number" : "1",
       "options" : [
         "derjat jopu",
@@ -27,7 +27,7 @@
     },
     {
       "name" : "spinka",
-      "size" : 30x40,
+      "size" : "30x40",
       "number" : "1",
       "options" : [
         "derjat spinu",
