@@ -105,7 +105,7 @@ function showParts(jsonObj) {
     myPara2.textContent = 'size: ' + parts[i].size;
     myPara3.textContent = 'options: ' + parts[i].options;
         
-    var options = jsonObj[i].options;
+    var options = parts[i].options;
     for (var j = 0; j < options.length; j++) {
       var listItem = document.createElement('li');
       listItem.textContent = options[j];
