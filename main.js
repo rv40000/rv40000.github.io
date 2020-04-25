@@ -80,7 +80,7 @@ function getInfo()
         else { console.log(rez); }
     });
 }
-var requestURL = 'https://github.com/rv40000/rv40000.github.io/blob/master/stuli.json';
+var requestURL = ' https://rv40000.github.io/stuli.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
