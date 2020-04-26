@@ -70,12 +70,12 @@ function showStuff(jsonObj) {
     }
 
     myDiv.appendChild(myPic);
-    myDiv.appendChild(myPara1);
-    myDiv.appendChild(myPara2);
-    myDiv.appendChild(myPara3);
-    myDiv.appendChild(myPara4);
-    myDiv.appendChild(myPara5);
-    myDiv.appendChild(myPara6);
+    myDiv.appendChild(Property1);
+    myDiv.appendChild(Property2);
+    myDiv.appendChild(Property3);
+    myDiv.appendChild(Property4);
+    myDiv.appendChild(Property5);
+    myDiv.appendChild(Property6);
     myDiv.appendChild(myList);
 document.getElementById("tupoiOsel").appendChild(myDiv);
   }
