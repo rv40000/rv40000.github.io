@@ -21,16 +21,7 @@ if (userName == 'яетиг'){
 myButton.onclick = function() {
   setUserName();
 }
-function makeDonkey()
-{
-  var cartos = document.querySelector('img');
-  var mySrc = cartos.getAttribute('src');
-    if(mySrc === '1522765869310.jpg') {
-      cartos.setAttribute ('src','shit.jpg');
-    } else {
-      cartos.setAttribute ('src','1522765869310.jpg');
-    }
-}
+
 function sendRequest(request, fn)
 {
     // тут создаётся объект - запрос в интернеты
@@ -95,7 +86,7 @@ function showStuff(jsonObj) {
       var myScr = myPic.getAttribute('src');
      if(document.getElementById("stuly-result").textContent === 'стул') {
       myPic.setAttribute ('src','shit.jpg');
-    } else if (document.getElementById("stuly-result").textContent === 'кресло')
+    } else if (document.getElementById("stuly-result").textContent === 'кресло'){
       myPic.setAttribute ('src','1522765869310.jpg');
     } else {
       myPic.setAttribute ('src', null);
