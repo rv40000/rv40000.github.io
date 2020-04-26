@@ -75,7 +75,7 @@ function showStuff(jsonObj) {
     myDiv.appendChild(Property4);
     myDiv.appendChild(Property5);
     myDiv.appendChild(Property6);
-    myDiv.appendChild(material);
+    myDiv.appendChild(myList);
 document.getElementById("tupoiOsel").appendChild(myDiv);
   }
 }
