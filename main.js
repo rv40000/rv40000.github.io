@@ -37,7 +37,7 @@ request.onload = function() {
 function showStuff(jsonObj) {
   document.getElementById("stuly-result").textContent = jsonObj.название;  
    var properties = jsonObj['stuff'];
-  var myPic = document.querySelector('img');
+  var myPic = document.getElementById("stulPic");
       var myScr = myPic.getAttribute('src');
      if(document.getElementById("stuly-result").textContent === 'стул') {
       myPic.setAttribute ('src','shit.jpg');
