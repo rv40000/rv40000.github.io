@@ -46,7 +46,7 @@ function showStuff(jsonObj) {
     } else {
       myPic.setAttribute ('src', null);
     }
-  for (var i = 1; i < properties.length; i++) {
+  for (var i = 0; i < properties.length; i++) {
     var myDiv = document.createElement('div');
     var Property1 = document.createElement('p');
     var Property2 = document.createElement('p');
