@@ -44,8 +44,8 @@ function showStuff(jsonObj)
     {
         if (kychaMebeli[i].название === searchQuery)
         {
-            document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
-          for (var i = 0; i < properties.length; i++) 
+            document.getElementById("stuly-result").textContent = kychaMebeli[k].название;
+          for (var k = 0; k < properties.length; k++) 
           {
             var myDiv = document.createElement('div');
             var Property1 = document.createElement('p');
@@ -55,11 +55,11 @@ function showStuff(jsonObj)
             var Property5 = document.createElement('p');
             var Property6 = document.createElement('p');
             var myList = document.createElement('ul');
-            Property1.textContent = 'производитель: ' + properties[i].производитель;
-            Property2.textContent = 'цена: ' + properties[i].цена;
-            Property3.textContent = 'состояние: ' + properties[i].состояние;
-            Property4.textContent = 'вес: ' + properties[i].вес;
-            Property5.textContent = 'количество на складе: ' + properties[i].количество;
+            Property1.textContent = 'производитель: ' + properties[k].производитель;
+            Property2.textContent = 'цена: ' + properties[k].цена;
+            Property3.textContent = 'состояние: ' + properties[k].состояние;
+            Property4.textContent = 'вес: ' + properties[k].вес;
+            Property5.textContent = 'количество на складе: ' + properties[k].количество;
             Property6.textContent = 'материалы:';
           }
     var material = properties[i].материалы;
