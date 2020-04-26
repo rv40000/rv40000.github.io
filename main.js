@@ -70,6 +70,7 @@ function showStuff(jsonObj)
                 )
             );
         }
+    }
   for (var i = 0; i < properties.length; i++) {
     var myDiv = document.createElement('div');
     var Property1 = document.createElement('p');
