@@ -105,4 +105,3 @@ document.getElementById("tupoiOsel").appendChild(myDiv);
 }
 } 
 }
-}
