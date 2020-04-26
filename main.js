@@ -45,7 +45,7 @@ function showStuff(jsonObj)
         if (kychaMebeli[i].название === searchQuery)
         {
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
-          for (var k = 0; k < properties.length; k++) 
+          for (var k = 1; k < kychaMebeli.length; k++) 
           {
             var myDiv = document.createElement('div');
             var Property1 = document.createElement('p');
@@ -55,14 +55,14 @@ function showStuff(jsonObj)
             var Property5 = document.createElement('p');
             var Property6 = document.createElement('p');
             var myList = document.createElement('ul');
-            Property1.textContent = 'производитель: ' + properties[k].производитель;
-            Property2.textContent = 'цена: ' + properties[k].цена;
-            Property3.textContent = 'состояние: ' + properties[k].состояние;
-            Property4.textContent = 'вес: ' + properties[k].вес;
-            Property5.textContent = 'количество на складе: ' + properties[k].количество;
+            Property1.textContent = 'производитель: ' + kychaMebeli[k].производитель;
+            Property2.textContent = 'цена: ' + kychaMebeli[k].цена;
+            Property3.textContent = 'состояние: ' + kychaMebeli[k].состояние;
+            Property4.textContent = 'вес: ' + kychaMebeli[k].вес;
+            Property5.textContent = 'количество на складе: ' + kychaMebeli[k].количество;
             Property6.textContent = 'материалы:';
           }
-    var material = properties[i].материалы;
+    var material = kychaMebeli[i].материалы;
     for (var j = 0; j < material.length; j++) 
     {
       var listItem = document.createElement('li');
