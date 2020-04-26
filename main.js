@@ -44,7 +44,7 @@ function showStuff(jsonObj)
     {
         if (kychaMebeli[i].название === searchQuery)
         {
-            document.getElementById("stuly-result").textContent = kychaMebeli[k].название;
+            document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
           for (var k = 0; k < properties.length; k++) 
           {
             var myDiv = document.createElement('div');
