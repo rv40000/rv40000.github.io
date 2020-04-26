@@ -45,6 +45,39 @@ function showStuff(jsonObj)
         if (kychaMebeli[i].название === searchQuery)
         {
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
+          for (var i = 0; i < properties.length; i++) 
+          {
+            var myDiv = document.createElement('div');
+            var Property1 = document.createElement('p');
+            var Property2 = document.createElement('p');
+            var Property3 = document.createElement('p');
+            var Property4 = document.createElement('p');
+            var Property5 = document.createElement('p');
+            var Property6 = document.createElement('p');
+            var myList = document.createElement('ul');
+            Property1.textContent = 'производитель: ' + properties[i].производитель;
+            Property2.textContent = 'цена: ' + properties[i].цена;
+            Property3.textContent = 'состояние: ' + properties[i].состояние;
+            Property4.textContent = 'вес: ' + properties[i].вес;
+            Property5.textContent = 'количество на складе: ' + properties[i].количество;
+            Property6.textContent = 'материалы:';
+          }
+    var material = properties[i].материалы;
+    for (var j = 0; j < material.length; j++) 
+    {
+      var listItem = document.createElement('li');
+      listItem.textContent = material[j];
+      myList.appendChild(listItem);
+    }
+    myDiv.appendChild(myPic);
+    myDiv.appendChild(Property1);
+    myDiv.appendChild(Property2);
+    myDiv.appendChild(Property3);
+    myDiv.appendChild(Property4);
+    myDiv.appendChild(Property5);
+    myDiv.appendChild(Property6);
+    myDiv.appendChild(myList);
+    document.getElementById("tupoiOsel").appendChild(myDiv);
             let myPic = document.getElementById("stulPic");
             if (document.getElementById("stuly-result").textContent === 'стул')
             {
@@ -71,37 +104,4 @@ function showStuff(jsonObj)
             );
         }
     }
-  for (var i = 0; i < properties.length; i++) {
-    var myDiv = document.createElement('div');
-    var Property1 = document.createElement('p');
-    var Property2 = document.createElement('p');
-    var Property3 = document.createElement('p');
-    var Property4 = document.createElement('p');
-    var Property5 = document.createElement('p');
-    var Property6 = document.createElement('p');
-    var myList = document.createElement('ul');
-   Property1.textContent = 'производитель: ' + properties[i].производитель;
-    Property2.textContent = 'цена: ' + properties[i].цена;
-    Property3.textContent = 'состояние: ' + properties[i].состояние;
-     Property4.textContent = 'вес: ' + properties[i].вес;
-    Property5.textContent = 'количество на складе: ' + properties[i].количество;
-    Property6.textContent = 'материалы:';
-        
-    var material = properties[i].материалы;
-    for (var j = 0; j < material.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = material[j];
-      myList.appendChild(listItem);
-    }
-    myDiv.appendChild(myPic);
-    myDiv.appendChild(Property1);
-    myDiv.appendChild(Property2);
-    myDiv.appendChild(Property3);
-    myDiv.appendChild(Property4);
-    myDiv.appendChild(Property5);
-    myDiv.appendChild(Property6);
-    myDiv.appendChild(myList);
-document.getElementById("tupoiOsel").appendChild(myDiv);
-}
-} 
 }
