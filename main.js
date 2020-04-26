@@ -66,9 +66,8 @@ function showStuff(jsonObj) {
     for (var j = 0; j < material.length; j++) {
       var listItem = document.createElement('li');
       listItem.textContent = material[j];
-      myList.appendChild(listItem);
+      material.appendChild(listItem);
     }
-
     myDiv.appendChild(myPic);
     myDiv.appendChild(Property1);
     myDiv.appendChild(Property2);
