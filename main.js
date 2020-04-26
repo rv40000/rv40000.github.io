@@ -22,54 +22,9 @@ myButton.onclick = function() {
   setUserName();
 }
 
-function sendRequest(request, fn)
-{
-    // тут создаётся объект - запрос в интернеты
-    let xhr = new XMLHttpRequest();
-    // тут говорится что мы хотим сделать GET для указанного ресурса,
-    // но вообще другие команды тоже такое могут
-    xhr.open("GET", request);
-    // послали запрос
-    xhr.send();
-
-    xhr.onload = function()
-    {
-        // если статус не 200, то косяк
-        // 200 - это стандартный статус когда всё чики-пуки
-        if (xhr.status != 200)
-        {
-            console.error("Ошибка, HTTP статус:", xhr.status);
-            if (xhr.status === 500)
-            {
-                console.error(xhr.response);
-            }
-            // передаём в функцию обработчик пустую фигню
-            fn(null);
-        }
-        else // ну а если 200, то всё чики-пуки
-        {
-            // передаём в функцию обработчик результат запроса
-            fn(xhr.response);
-        }
-    };
-
-    xhr.onerror = function()
-    {
-        console.error("Не удалоооссссссс отправить запрос");
-    };
-}
-
 function getInfo()
 {
-    let search = "american gods";
-    // зовём функцию отправки запроса и говорим ей, какая функция будет
-    // обрабатывать результат
-    // также, ясен пень, указываем, какой ресурс запрашиваем
-    sendRequest(`https://api.tvmaze.com/search/shows?q=${search}`, function(rez)
-    {
-        if (rez === null) { console.error("Запрос обломался, пустой результат"); }
-        else { console.log(rez); }
-    });
+  document.getElementById("req").value;
 var requestURL = 'https://rv40000.github.io/stuli.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
