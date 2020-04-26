@@ -86,3 +86,4 @@ document.getElementById("tupoiOsel").appendChild(myDiv);
 document.getElementById("tupoiOsel").appendChild(myDiv);
 } 
 }
+}
