@@ -82,6 +82,8 @@ document.getElementById("tupoiOsel").appendChild(myDiv);
 }
 } else { 
    var dismis = document.createElement('p');
-  dismis.textContent = 'Схерали ты решил, что: ' + document.getElementById("req").value + 'тут есть?'
+  dismis.textContent = 'Схерали ты решил, что: ' + document.getElementById("req").value + 'тут есть?';
+  myDiv.appendChild(dismis);
+document.getElementById("tupoiOsel").appendChild(myDiv);
 } 
 }
