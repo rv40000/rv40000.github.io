@@ -105,4 +105,3 @@ function showStuff(jsonObj)
 document.getElementById("tupoiOsel").appendChild(myDiv);
 }
 } 
-}
