@@ -79,7 +79,6 @@ function getInfo()
         if (rez === null) { console.error("Запрос обломался, пустой результат"); }
         else { console.log(rez); }
     });
-}
 var requestURL = 'https://rv40000.github.io/stuli.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -87,36 +86,52 @@ request.responseType = 'json';
 request.send();
 request.onload = function() {
   var stul = request.response;
-  showParts(stul);
+  showStuff(stul);
 }
-function showParts(jsonObj) {
-  document.getElementById("stuly-result").textContent = jsonObj.mebelName;  
-   var parts = jsonObj['parts'];
-  for (var i = 0; i < parts.length; i++) {
-    var myArticle = document.createElement('article');
-    var myH4 = document.createElement('h4');
-    var myPara1 = document.createElement('p');
-    var myPara2 = document.createElement('p');
-    var myPara3 = document.createElement('p');
+function showStuff(jsonObj) {
+  document.getElementById("stuly-result").textContent = jsonObj.название;  
+   var properties = jsonObj['stuff'];
+  var myPic = document.querySelector('img');
+      var myScr = myPic.getAttribute('src');
+     if(document.getElementById("stuly-result").textContent === 'стул') {
+      myPic.setAttribute ('src','shit.jpg');
+    } else if (document.getElementById("stuly-result").textContent === 'кресло')
+      myPic.setAttribute ('src','1522765869310.jpg');
+    } else {
+      myPic.setAttribute ('src', null);
+    }
+  for (var i = 1; i < stuff.length; i++) {
+    var myDiv = document.createElement('div');
+    var Property1 = document.createElement('p');
+    var Property2 = document.createElement('p');
+    var Property3 = document.createElement('p');
+    var Property4 = document.createElement('p');
+    var Property5 = document.createElement('p');
+    var Property6 = document.createElement('p');
     var myList = document.createElement('ul');
-
-    myH4.textContent = parts[i].name;
-    myPara1.textContent = 'number: ' + parts[i].number;
-    myPara2.textContent = 'size: ' + parts[i].size;
-    myPara3.textContent = 'options:';
+   Property1.textContent = 'производитель: ' + stuff[i].производитель;
+    Property2.textContent = 'цена: ' + stuff[i].цена;
+    Property3.textContent = 'состояние: ' + stuff[i].состояние;
+     Property4.textContent = 'вес: ' + stuff[i].вес;
+    Property5.textContent = 'количество на складе: ' + stuff[i].количество;
+    Property6.textContent = 'материалы:';
         
-    var options = parts[i].options;
-    for (var j = 0; j < options.length; j++) {
+    var material = stuff[i].материалы;
+    for (var j = 0; j < material.length; j++) {
       var listItem = document.createElement('li');
-      listItem.textContent = options[j];
+      listItem.textContent = material[j];
       myList.appendChild(listItem);
     }
 
-    myArticle.appendChild(myH4);
-    myArticle.appendChild(myPara1);
-    myArticle.appendChild(myPara2);
-    myArticle.appendChild(myPara3);
-    myArticle.appendChild(myList);
-document.getElementById("tupoiOsel").appendChild(myArticle);
+    myDiv.appendChild(myPic);
+    myDiv.appendChild(myPara1);
+    myDiv.appendChild(myPara2);
+    myDiv.appendChild(myPara3);
+    myDiv.appendChild(myPara4);
+    myDiv.appendChild(myPara5);
+    myDiv.appendChild(myPara6);
+    myDiv.appendChild(myList);
+document.getElementById("tupoiOsel").appendChild(myDiv);
   }
+}
 }
