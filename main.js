@@ -24,7 +24,6 @@ myButton.onclick = function() {
 
 function getInfo()
 {
-  document.getElementById("req").value;
 var requestURL = 'https://rv40000.github.io/stuli.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -78,11 +77,10 @@ function showStuff(jsonObj) {
     myDiv.appendChild(Property6);
     myDiv.appendChild(myList);
 document.getElementById("tupoiOsel").appendChild(myDiv);
-  }
 }
 } else { 
    var dismis = document.createElement('p');
-  dismis.textContent = 'Схерали ты решил, что: ' + document.getElementById("req").value + 'тут есть?';
+  dismis.textContent = 'Схерали ты решил, что: ' + document.getElementById("req").textContent + 'тут есть?';
   myDiv.appendChild(dismis);
 document.getElementById("tupoiOsel").appendChild(myDiv);
 } 
