@@ -35,8 +35,9 @@ request.onload = function() {
   showStuff(stul);
 }
 function showStuff(jsonObj) {
-  document.getElementById("stuly-result").textContent = jsonObj.название;  
-   var properties = jsonObj['stuff'];
+  if (document.getElementById("req").value == jsonObj.название) {
+  document.getElementById("stuly-result").textContent = jsonObj.название;
+     var properties = jsonObj['stuff'];
   var myPic = document.getElementById("stulPic");
       var myScr = myPic.getAttribute('src');
      if(document.getElementById("stuly-result").textContent === 'стул') {
@@ -79,4 +80,8 @@ function showStuff(jsonObj) {
 document.getElementById("tupoiOsel").appendChild(myDiv);
   }
 }
+} else { 
+   var dismis = document.createElement('p');
+  dismis.textContent = 'Схерали ты решил, что: ' + document.getElementById("req").value + 'тут есть?'
+} 
 }
