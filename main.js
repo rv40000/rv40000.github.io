@@ -46,7 +46,7 @@ function showStuff(jsonObj) {
     } else {
       myPic.setAttribute ('src', null);
     }
-  for (var i = 1; i < stuff.length; i++) {
+  for (var i = 1; i < properties.length; i++) {
     var myDiv = document.createElement('div');
     var Property1 = document.createElement('p');
     var Property2 = document.createElement('p');
@@ -55,14 +55,14 @@ function showStuff(jsonObj) {
     var Property5 = document.createElement('p');
     var Property6 = document.createElement('p');
     var myList = document.createElement('ul');
-   Property1.textContent = 'производитель: ' + stuff[i].производитель;
-    Property2.textContent = 'цена: ' + stuff[i].цена;
-    Property3.textContent = 'состояние: ' + stuff[i].состояние;
-     Property4.textContent = 'вес: ' + stuff[i].вес;
-    Property5.textContent = 'количество на складе: ' + stuff[i].количество;
+   Property1.textContent = 'производитель: ' + properties[i].производитель;
+    Property2.textContent = 'цена: ' + properties[i].цена;
+    Property3.textContent = 'состояние: ' + properties[i].состояние;
+     Property4.textContent = 'вес: ' + properties[i].вес;
+    Property5.textContent = 'количество на складе: ' + properties[i].количество;
     Property6.textContent = 'материалы:';
         
-    var material = stuff[i].материалы;
+    var material = properties[i].материалы;
     for (var j = 0; j < material.length; j++) {
       var listItem = document.createElement('li');
       listItem.textContent = material[j];
