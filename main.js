@@ -69,7 +69,6 @@ function showStuff(jsonObj)
       listItem.textContent = material[j];
       myList.appendChild(listItem);
     }
-    myDiv.appendChild(myPic);
     myDiv.appendChild(Property1);
     myDiv.appendChild(Property2);
     myDiv.appendChild(Property3);
@@ -91,6 +90,7 @@ function showStuff(jsonObj)
             {
                 myPic.setAttribute('src', null);
             }
+          myDiv.appendChild(myPic);
         }
         else
         {
