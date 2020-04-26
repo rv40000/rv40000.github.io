@@ -79,6 +79,7 @@ function showStuff(jsonObj) {
 document.getElementById("tupoiOsel").appendChild(myDiv);
 }
 } else { 
+   var myDiv = document.createElement('div');
    var dismis = document.createElement('p');
   dismis.textContent = 'Схерали ты решил, что: ' + document.getElementById("req").textContent + 'тут есть?';
   myDiv.appendChild(dismis);
