@@ -33,19 +33,45 @@ request.onload = function() {
   var stul = request.response;
   showStuff(stul);
 }
-function showStuff(jsonObj) {
-  if (document.getElementById("req").value == jsonObj.название) {
-  document.getElementById("stuly-result").textContent = jsonObj.название;
-     var properties = jsonObj['stuff'];
-  var myPic = document.getElementById("stulPic");
-      var myScr = myPic.getAttribute('src');
-     if(document.getElementById("stuly-result").textContent === 'стул') {
-      myPic.setAttribute ('src','shit.jpg');
-    } else if (document.getElementById("stuly-result").textContent === 'кресло'){
-      myPic.setAttribute ('src','1522765869310.jpg');
-    } else {
-      myPic.setAttribute ('src', null);
+function showStuff(jsonObj)
+{
+    // схороним поисковый запрос в переменную
+    let searchQuery = document.getElementById("req").value;
+    
+    let kychaMebeli = jsonObj['stuff'];
+    
+    for (let i = 0; i < kychaMebeli.length; i++)
+    {
+        if (kychaMebeli[i].название === searchQuery)
+        {
+            document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
+            let myPic = document.getElementById("stulPic");
+            if (document.getElementById("stuly-result").textContent === 'стул')
+            {
+                myPic.setAttribute('src', 'shit.jpg');
+            }
+            else if (document.getElementById("stuly-result").textContent === 'кресло')
+            {
+                myPic.setAttribute('src', '1522765869310.jpg');
+            }
+            else
+            {
+                myPic.setAttribute('src', null);
+            }
+        }
+        else
+        {
+            console.log(
+                "Не подходит эта шняга, потому что "
+                .concat(
+                    kychaMebeli[i].название,
+                    "это не ",
+                    searchQuery
+                )
+            );
+        }
     }
+}
   for (var i = 0; i < properties.length; i++) {
     var myDiv = document.createElement('div');
     var Property1 = document.createElement('p');
