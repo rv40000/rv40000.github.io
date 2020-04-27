@@ -47,10 +47,11 @@ function showStuff(jsonObj)
           document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
           var myList = document.createElement('ul');
           var myDiv = document.createElement('div');
-          var material = kychaMebeli[k].материалы;
+          
           for (var k = 1; k < kychaMebeli.length; k++) 
           
           {
+            var material = kychaMebeli[k].материалы;
             var Property1 = document.createElement('p');
             var Property2 = document.createElement('p');
             var Property3 = document.createElement('p');
