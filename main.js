@@ -98,7 +98,7 @@ function showStuff(jsonObj)
                 "Не подходит эта шняга, потому что "
                 .concat(
                     kychaMebeli[i].название,
-                    "это не ",
+                    " - это не ",
                     searchQuery
                 )
             );
