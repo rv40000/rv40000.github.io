@@ -21,6 +21,17 @@ if (userName == 'яетиг'){
 myButton.onclick = function() {
   setUserName();
 }
+function getInfo()
+{
+var requestURL = 'https://rv40000.github.io/stuli.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function() {
+  var stul = request.response;
+  showStuff(stul);
+}
 
 function showStuff(jsonObj)
 {
