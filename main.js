@@ -31,8 +31,8 @@ request.send();
 request.onload = function() {
   var stul = request.response;
   showStuff(stul);
+                            }
 }
-
 function showStuff(jsonObj)
 {
     // схороним поисковый запрос в переменную
