@@ -46,12 +46,12 @@ function showStuff(jsonObj)
         {
             console.log("Ололо, эта шняга подходит");
             console.log("Инфа по шняге:");
-            console.log(kychaMebeli[i].производитель);
+            console.log('производитель: ' + kychaMebeli[i].производитель);
             console.log('цена: ' + kychaMebeli[i].цена);
             console.log('состояние: ' + kychaMebeli[i].состояние);
             console.log('вес: ' + kychaMebeli[i].вес);
             console.log('количество на складе: ' + kychaMebeli[i].количество);
-            console.log('материалы:',  kychaMebeli[i].материалы.основа,  kychaMebeli[i].материалы.фурнитура);
+            console.log('материалы:', 'основа - ' + kychaMebeli[i].материалы.основа, 'фурнитура - ' + kychaMebeli[i].материалы.фурнитура);
         }
         else {
             console.log(
