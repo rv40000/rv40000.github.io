@@ -45,16 +45,13 @@ function showStuff(jsonObj)
         if (kychaMebeli[i].название === searchQuery)
         {
             console.log("Ололо, эта шняга подходит");
-            for (var k = 1; k < kychaMebeli.length; k++)
-            {
-                console.log("Инфа по шняге:");
-                console.log(kychaMebeli[k].производитель);
-                console.log('цена: ' + kychaMebeli[k].цена);
-                console.log('состояние: ' + kychaMebeli[k].состояние);
-                console.log('вес: ' + kychaMebeli[k].вес);
-                console.log('количество на складе: ' + kychaMebeli[k].количество);
-                console.log('материалы:',  kychaMebeli[k].материалы.основа,  kychaMebeli[k].материалы.фурнитура);
-            }
+            console.log("Инфа по шняге:");
+            console.log(kychaMebeli[k].производитель);
+            console.log('цена: ' + kychaMebeli[k].цена);
+            console.log('состояние: ' + kychaMebeli[k].состояние);
+            console.log('вес: ' + kychaMebeli[k].вес);
+            console.log('количество на складе: ' + kychaMebeli[k].количество);
+            console.log('материалы:',  kychaMebeli[k].материалы.основа,  kychaMebeli[k].материалы.фурнитура);
         }
         else {
             console.log(
