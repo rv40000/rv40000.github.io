@@ -45,12 +45,13 @@ function showStuff(jsonObj)
         if (kychaMebeli[i].название === searchQuery)
         {
           document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
-          var myList = document.createElement('ul');
+          
           var myDiv = document.createElement('div');
           
           for (var k = 1; k < kychaMebeli.length; k++) 
           
           {
+            var myList = document.createElement('ul');
             var material = kychaMebeli[k].материалы;
             var Property1 = document.createElement('p');
             var Property2 = document.createElement('p');
@@ -71,14 +72,15 @@ function showStuff(jsonObj)
             myDiv.appendChild(Property5);
             myDiv.appendChild(Property6);
             myDiv.appendChild(myList);
+          }
+           
             for (var j = 0; j < material.length; j++) 
             {
+      document.getElementById("tupoiOsel").appendChild(myDiv);
       var listItem = document.createElement('li');
       listItem.textContent = material[j];
       myList.appendChild(listItem);
             }
-            document.getElementById("tupoiOsel").appendChild(myDiv);
-          }
             let myPic = document.getElementById("stulPic");
             if (document.getElementById("stuly-result").textContent === 'стул')
             {
