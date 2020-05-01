@@ -51,7 +51,7 @@ function showStuff(jsonObj)
             console.log('состояние: ' + kychaMebeli[i].состояние);
             console.log('вес: ' + kychaMebeli[i].вес);
             console.log('количество на складе: ' + kychaMebeli[i].количество);
-            console.log('материалы:',  kychaMebeli[i].материалы.основа,  kychaMebeli[k].материалы.фурнитура);
+            console.log('материалы:',  kychaMebeli[i].материалы.основа,  kychaMebeli[i].материалы.фурнитура);
         }
         else {
             console.log(
