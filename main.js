@@ -54,10 +54,7 @@ function showStuff(jsonObj)
             console.log("Инфа по шняге:");
             console.log('производитель: ' + kychaMebeli[i].производитель);
             console.log('цена: ' + kychaMebeli[i].цена);
-            console.log('состояние: ' + kychaMebeli[i].состояние);
-            console.log('вес: ' + kychaMebeli[i].вес);
-            console.log('количество на складе: ' + kychaMebeli[i].количество);
-            console.log('материалы:', 'основа - ' + kychaMebeli[i].материалы.основа, 'фурнитура - ' + kychaMebeli[i].материалы.фурнитура);
+            console.log('тупая братва учит как сто куч, сам придумал свою сраную консоль и всрал весь код');
         }
         else {
             console.log(
