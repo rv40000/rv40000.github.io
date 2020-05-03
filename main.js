@@ -43,6 +43,7 @@ function showStuff(jsonObj)
     {
           if (kychaMebeli[i].название === searchQuery)
         {
+            document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
             let Property1 = document.createElement('p');
             let Property2 = document.createElement('p');  
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
@@ -69,6 +70,5 @@ function showStuff(jsonObj)
             );
         }
     }
-   document.getElementById("stuly-result").textContent = kychaMebeli[i].название; 
-   document.getElementById("tupoiOsel").appendChild(myDiv);
+     document.getElementById("tupoiOsel").appendChild(myDiv);
  }
