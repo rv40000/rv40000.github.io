@@ -39,15 +39,13 @@ function showStuff(jsonObj)
 
     let kychaMebeli = jsonObj['stuff'];
     let myDiv = document.createElement('div');
-    let myPic = document.getElementById("stulPic");
-    document.getElementById("tupoiOsel").appendChild(myDiv);   
-    let Property1 = document.createElement('p');
-    let Property2 = document.createElement('p');  
     for (let i = 0; i < kychaMebeli.length; i++)
     {
-        if (kychaMebeli[i].название === searchQuery)
+          if (kychaMebeli[i].название === searchQuery)
         {
-                        document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
+            let Property1 = document.createElement('p');
+            let Property2 = document.createElement('p');  
+            let myPic = document.getElementById("stulPic");
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
             if (document.getElementById("stuly-result").textContent === 'стул')
@@ -62,6 +60,9 @@ function showStuff(jsonObj)
             {
                 myPic.setAttribute('src', null);
             }
+            myDiv.appendChild(myPic);
+            myDiv.appendChild(Property1);
+            myDiv.appendChild(Property2);
             console.log("Ололо, эта шняга подходит");
             console.log("Инфа по шняге:");
             console.log('производитель: ' + kychaMebeli[i].производитель);
@@ -82,7 +83,6 @@ function showStuff(jsonObj)
             );
         }
     }
-   myDiv.appendChild(myPic);
-   myDiv.appendChild(Property1);
-   myDiv.appendChild(Property2);
-}
+   document.getElementById("stuly-result").textContent = kychaMebeli[i].название; 
+   document.getElementById("tupoiOsel").appendChild(myDiv);
+ }
