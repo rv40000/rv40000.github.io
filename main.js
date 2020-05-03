@@ -45,22 +45,8 @@ function showStuff(jsonObj)
         {
             let Property1 = document.createElement('p');
             let Property2 = document.createElement('p');  
-            let myPic = document.getElementById("stulPic");
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
-            if (document.getElementById("stuly-result").textContent === 'стул')
-            {
-                myPic.setAttribute('src', 'shit.jpg');
-            }
-            else if (document.getElementById("stuly-result").textContent === 'кресло')
-            {
-                myPic.setAttribute('src', '1522765869310.jpg');
-            }
-            else
-            {
-                myPic.setAttribute('src', null);
-            }
-            myDiv.appendChild(myPic);
             myDiv.appendChild(Property1);
             myDiv.appendChild(Property2);
             console.log("Ололо, эта шняга подходит");
