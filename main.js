@@ -44,12 +44,12 @@ function showStuff(jsonObj)
     let myDiv = document.createElement('div');
     let myPic = document.getElementById("stulPic");
     document.getElementById("tupoiOsel").appendChild(myDiv);   
+    document.getElementById("tupoiOsel").innerHTML = "";  
     for (let i = 0; i < kychaMebeli.length; i++)
     {
         if (kychaMebeli[i].название === searchQuery)
         {
-          document.getElementById("tupoiOsel").innerHTML = "";  
-          document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
+            document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
             myDiv.appendChild(Property1);
