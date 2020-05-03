@@ -50,8 +50,6 @@ function showStuff(jsonObj)
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
-            myDiv.appendChild(Property1);
-            myDiv.appendChild(Property2);
             if (document.getElementById("stuly-result").textContent === 'стул')
             {
                 myPic.setAttribute('src', 'shit.jpg');
@@ -64,7 +62,6 @@ function showStuff(jsonObj)
             {
                 myPic.setAttribute('src', null);
             }
-            myDiv.appendChild(myPic);
             console.log("Ололо, эта шняга подходит");
             console.log("Инфа по шняге:");
             console.log('производитель: ' + kychaMebeli[i].производитель);
@@ -85,4 +82,7 @@ function showStuff(jsonObj)
             );
         }
     }
+   myDiv.appendChild(myPic);
+   myDiv.appendChild(Property1);
+   myDiv.appendChild(Property2);
 }
