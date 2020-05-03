@@ -23,6 +23,7 @@ myButton.onclick = function() {
 }
 function getInfo()
 {
+document.getElementById("tupoiOsel").innerHTML = "";
 var requestURL = 'https://rv40000.github.io/stuli.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
