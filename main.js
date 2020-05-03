@@ -48,6 +48,7 @@ function showStuff(jsonObj)
         if (kychaMebeli[i].название === searchQuery)
         {
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
+            document.getElementById("tupoiOsel").appendChild(myDiv);  
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
             myDiv.appendChild(Property1);
