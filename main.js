@@ -47,6 +47,7 @@ function showStuff(jsonObj)
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
             var Property1 = document.createElement('p');
             var Property2 = document.createElement('p');
+            var myDiv = document.createElement('div');
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
             myDiv.appendChild(Property1);
