@@ -35,7 +35,6 @@ request.onload = function() {
 }
 function showStuff(jsonObj)
 {
-    // схороним поисковый запрос в переменную
     let searchQuery = document.getElementById("req").value;
 
     let kychaMebeli = jsonObj['stuff'];
@@ -43,6 +42,7 @@ function showStuff(jsonObj)
     let Property1 = document.createElement('p');
     let Property2 = document.createElement('p');
     let myDiv = document.createElement('div');
+    let myPic = document.getElementById("stulPic");
     for (let i = 0; i < kychaMebeli.length; i++)
     {
         if (kychaMebeli[i].название === searchQuery)
@@ -53,6 +53,19 @@ function showStuff(jsonObj)
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
             myDiv.appendChild(Property1);
             myDiv.appendChild(Property2);
+            if (document.getElementById("stuly-result").textContent === 'стул')
+            {
+                myPic.setAttribute('src', 'shit.jpg');
+            }
+            else if (document.getElementById("stuly-result").textContent === 'кресло')
+            {
+                myPic.setAttribute('src', '1522765869310.jpg');
+            }
+            else
+            {
+                myPic.setAttribute('src', null);
+            }
+            myDiv.appendChild(myPic);
             console.log("Ололо, эта шняга подходит");
             console.log("Инфа по шняге:");
             console.log('производитель: ' + kychaMebeli[i].производитель);
