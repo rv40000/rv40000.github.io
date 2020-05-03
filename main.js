@@ -38,17 +38,15 @@ function showStuff(jsonObj)
     let searchQuery = document.getElementById("req").value;
 
     let kychaMebeli = jsonObj['stuff'];
-    
-    let Property1 = document.createElement('p');
-    let Property2 = document.createElement('p');
     let myDiv = document.createElement('div');
     let myPic = document.getElementById("stulPic");
     document.getElementById("tupoiOsel").appendChild(myDiv);   
-    document.getElementById("tupoiOsel").innerHTML = "";  
     for (let i = 0; i < kychaMebeli.length; i++)
     {
         if (kychaMebeli[i].название === searchQuery)
         {
+            let Property1 = document.createElement('p');
+            let Property2 = document.createElement('p');  
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
