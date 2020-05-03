@@ -39,15 +39,15 @@ function showStuff(jsonObj)
     let searchQuery = document.getElementById("req").value;
 
     let kychaMebeli = jsonObj['stuff'];
-
+    
+    let Property1 = document.createElement('p');
+    let Property2 = document.createElement('p');
+    let myDiv = document.createElement('div');
     for (let i = 0; i < kychaMebeli.length; i++)
     {
         if (kychaMebeli[i].название === searchQuery)
         {
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
-            var Property1 = document.createElement('p');
-            var Property2 = document.createElement('p');
-            var myDiv = document.createElement('div');
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
             myDiv.appendChild(Property1);
