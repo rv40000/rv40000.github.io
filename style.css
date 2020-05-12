@@ -4,6 +4,9 @@ p {
   line-height: 1;
   letter-spacing: 1px;
 }
+.tumbl th, .tumbl td {
+   padding: 5px 10px;
+}
 footer {
   text-align: right;
 }
