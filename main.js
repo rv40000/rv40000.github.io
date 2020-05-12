@@ -45,19 +45,20 @@ function showStuff(jsonObj)
           if (kychaMebeli[i].название === searchQuery)
         {
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
-            let Property = document.createElement('img');
+            let myPic = document.createElement('img');
             let Property1 = document.createElement('td');
             let Property2 = document.createElement('td');  
-            Property.src = kychaMebeli[i].фото;
+            myPic.src = kychaMebeli[i].фото;
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
-            myTd.appendChild(Property);
+            myTd.appendChild(myPic);
             myTd.appendChild(Property1);
             myTd.appendChild(Property2);
             console.log("Ололо, эта шняга подходит");
             console.log("Инфа по шняге:");
             console.log('производитель: ' + kychaMebeli[i].производитель);
             console.log('цена: ' + kychaMebeli[i].цена);
+            console.log('гавна кусок : ' + kychaMebeli[i].фото);
             console.log('тупая братва учит как сто куч, сам придумал свою вонючую консоль и всрал весь код');
         }
         else {
