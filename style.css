@@ -5,13 +5,13 @@ p {
   letter-spacing: 1px;
 }
 .tumbl th, .tumbl td {
-   padding: 5px 10px;
+   padding: 10px 50px;
 }
 footer {
   text-align: right;
 }
 .mubl-tumbl {
-    max-height: 200px;
+    max-height: 100px;
 }
 button {
   margin: 0 avto;
