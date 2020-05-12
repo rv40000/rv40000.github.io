@@ -55,6 +55,7 @@ function showStuff(jsonObj)
             myCell.appendChild(myPic);
             myCell.appendChild(Property1);
             myCell.appendChild(Property2);
+            document.getElementById("meb").appendChild(myCell);
             console.log("Ололо, эта шняга подходит");
             console.log("Инфа по шняге:");
             console.log('производитель: ' + kychaMebeli[i].производитель);
@@ -73,5 +74,4 @@ function showStuff(jsonObj)
             );
         }
     }
-     document.getElementById("meb").appendChild(myCell);
  }
