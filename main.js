@@ -39,21 +39,21 @@ function showStuff(jsonObj)
     let searchQuery = document.getElementById("req").value;
 
     let kychaMebeli = jsonObj['stuff'];
-    let myTr = document.createElement('tr');
-    for (let i = 0; i < kychaMebeli.length; i++)
+    let myTd = document.createElement('td');
+        for (let i = 0; i < kychaMebeli.length; i++)
     {
           if (kychaMebeli[i].название === searchQuery)
         {
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
-            let Property = document.createElement('tr');
-            let Property1 = document.createElement('tr');
-            let Property2 = document.createElement('tr');  
+            let Property = document.createElement('img');
+            let Property1 = document.createElement('td');
+            let Property2 = document.createElement('td');  
             Property.src = kychaMebeli[i].фото;
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
-            myTr.appendChild(Property);
-            myTr.appendChild(Property1);
-            myTr.appendChild(Property2);
+            myTd.appendChild(Property);
+            myTd.appendChild(Property1);
+            myTd.appendChild(Property2);
             console.log("Ололо, эта шняга подходит");
             console.log("Инфа по шняге:");
             console.log('производитель: ' + kychaMebeli[i].производитель);
@@ -71,5 +71,5 @@ function showStuff(jsonObj)
             );
         }
     }
-     document.getElementById("meb").appendChild(myTr);
+     document.getElementById("meb").appendChild(myTd);
  }
