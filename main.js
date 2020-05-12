@@ -44,6 +44,7 @@ function showStuff(jsonObj)
     {
           if (kychaMebeli[i].название === searchQuery)
         {
+            let myCell = document.createElement('tr');
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
             let myPic = document.createElement('img');
             let Property1 = document.createElement('td');
