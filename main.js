@@ -39,23 +39,26 @@ function showStuff(jsonObj)
     let searchQuery = document.getElementById("req").value;
 
     let kychaMebeli = jsonObj['stuff'];
-    let myDiv = document.createElement('div');
+    let myTr = document.createElement('tr');
     for (let i = 0; i < kychaMebeli.length; i++)
     {
           if (kychaMebeli[i].название === searchQuery)
         {
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
-            let Property1 = document.createElement('p');
-            let Property2 = document.createElement('p');  
+            let Property = document.createElement('tr');
+            let Property1 = document.createElement('tr');
+            let Property2 = document.createElement('tr');  
+            Property.value = kychaMebeli[i].фото;
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
-            myDiv.appendChild(Property1);
-            myDiv.appendChild(Property2);
+            myTr.appendChild(Property);
+            myTr.appendChild(Property1);
+            myTr.appendChild(Property2);
             console.log("Ололо, эта шняга подходит");
             console.log("Инфа по шняге:");
             console.log('производитель: ' + kychaMebeli[i].производитель);
             console.log('цена: ' + kychaMebeli[i].цена);
-            console.log('тупая братва учит как сто куч, сам придумал свою сраную консоль и всрал весь код');
+            console.log('тупая братва учит как сто куч, сам придумал свою вонючую консоль и всрал весь код');
         }
         else {
             console.log(
@@ -68,5 +71,5 @@ function showStuff(jsonObj)
             );
         }
     }
-     document.getElementById("tupoiOsel").appendChild(myDiv);
+     document.getElementById("meb").appendChild(myTr);
  }
