@@ -48,7 +48,7 @@ function showStuff(jsonObj)
             let Property = document.createElement('tr');
             let Property1 = document.createElement('tr');
             let Property2 = document.createElement('tr');  
-            Property.value = kychaMebeli[i].фото;
+            Property.src = kychaMebeli[i].фото;
             Property1.textContent = 'производитель: ' + kychaMebeli[i].производитель;
             Property2.textContent = 'цена: ' + kychaMebeli[i].цена;
             myTr.appendChild(Property);
