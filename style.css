@@ -7,8 +7,8 @@ p {
 footer {
   text-align: right;
 }
-td {
-  width: 250px
+.mubl-tumbl {
+    max-height: 200px;
 }
 button {
   margin: 0 avto;
