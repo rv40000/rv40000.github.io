@@ -7,6 +7,9 @@ p {
 footer {
   text-align: right;
 }
+td {
+  width: 250px
+}
 button {
   margin: 0 avto;
   background-color: #dffaf9;
