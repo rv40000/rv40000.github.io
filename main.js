@@ -40,6 +40,7 @@ function showStuff(jsonObj)
 
     let kychaMebeli = jsonObj['stuff'];
     let myCell = document.createElement('tr');
+    
         for (let i = 0; i < kychaMebeli.length; i++)
     {
           if (kychaMebeli[i].название === searchQuery)
@@ -47,6 +48,7 @@ function showStuff(jsonObj)
             let myCell = document.createElement('tr');
             document.getElementById("stuly-result").textContent = kychaMebeli[i].название;
             let myPic = document.createElement('img');
+            myPic.classList.add("mubl-tumbl");
             let Property1 = document.createElement('td');
             let Property2 = document.createElement('td');  
             myPic.src = kychaMebeli[i].фото;
