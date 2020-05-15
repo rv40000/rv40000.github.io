@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Запустить офигенский сервер",
+            "type": "shell",
+            "command": "python -m http.server 8000"
+        }
+    ]
+}
