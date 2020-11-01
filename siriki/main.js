@@ -23,7 +23,6 @@ const response = fetch("/siriki/siriki.json", { method: "GET" })
             console.error(error.message);
         }
     )
-    );
     .finally(
         function()
         {
