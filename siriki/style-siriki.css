@@ -1,0 +1,9 @@
+table th {
+    background: #e6e6e6;
+}
+table th,
+table td {
+    border: 1px solid black;
+    padding: 8px 12px;
+    text-align: center;
+}
