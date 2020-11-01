@@ -16,7 +16,7 @@ const response = fetch("/siriki/siriki.json", { method: "GET" })
         data.forEach(sirik => {
             console.log(sirik);
         }
-        )
+        );
       }
     .catch(
         error => {
