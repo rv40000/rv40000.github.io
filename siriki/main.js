@@ -17,7 +17,7 @@ const response = fetch("/siriki/siriki.json", { method: "GET" })
             console.log(sirik));
         }
     }
-    )
+       )
     .catch(
         error => {
             console.error(error.message);
