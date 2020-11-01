@@ -14,7 +14,7 @@ const response = fetch("/siriki/siriki.json", { method: "GET" })
       data => {
           //console.log(data);
           data.forEach(sirik => {
-              console.log(sirik);
+              console.log(sirik.название, sirik.год, sirik.описание);
           });
       }
   )
@@ -26,6 +26,6 @@ const response = fetch("/siriki/siriki.json", { method: "GET" })
     .finally(
         function()
         {
-            // тут ещё чонить будет
+       // тут ещё чонить будет
         }
     );
