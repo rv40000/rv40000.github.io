@@ -1,5 +1,5 @@
 ﻿console.log("вачопеке");
-const response = await fetch("/siriki/siriki.json", { method: "GET" })
+const response = fetch("/siriki/siriki.json", { method: "GET" })
     .then(
         response => {
             if (!response.ok) {
