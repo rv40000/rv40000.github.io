@@ -14,10 +14,10 @@ const response = fetch("/siriki/siriki.json", { method: "GET" })
       data => {
         //console.log(data);
         data.forEach(sirik => {
-            console.log(sirik));
+            console.log(sirik);
         }
-    }
-       )
+        )
+      }
     .catch(
         error => {
             console.error(error.message);
