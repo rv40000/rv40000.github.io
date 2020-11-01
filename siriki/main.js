@@ -1,4 +1,6 @@
-﻿console.log("вачопеке");
+﻿// tbs - Table Body Siriki
+var tbs = document.getElementById("siriki");
+console.log("вачопеке");
 const response = fetch("/siriki/siriki.json", { method: "GET" })
     .then(
         response => {
@@ -9,9 +11,12 @@ const response = fetch("/siriki/siriki.json", { method: "GET" })
         }
     )
     .then(
-        data => {
-            console.log(data);
+      data => {
+        //console.log(data);
+        data.forEach(sirik => {
+            console.log(sirik));
         }
+    }
     )
     .catch(
         error => {
